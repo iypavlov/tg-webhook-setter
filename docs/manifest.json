@@ -1,0 +1,9 @@
+{
+  "name": "tg-webhook-setter",
+  "short_name": "tg-webhook-setter",
+  "theme_color": "#1c1c1c",
+  "background_color": "#1c1c1c",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}

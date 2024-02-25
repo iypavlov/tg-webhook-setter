@@ -12,7 +12,7 @@ body {
   justify-content: center;
   gap: 34px;
   min-height: 100vh;
-  background: #1c1c1c;
+    background: #1c1c1c;
   color: #fff;
   padding: 12px;
 }
@@ -46,7 +46,7 @@ button {
   cursor: pointer;
   font-size: 18px;
   background: #9c57f7;
-  color: #1c1c1c;
+  color: #000;
   transition: .2s ease;
 }
 
