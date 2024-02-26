@@ -12,7 +12,8 @@ body {
   justify-content: center;
   gap: 34px;
   min-height: 100vh;
-    background: #1c1c1c;
+  background: #1c1c1c;
+  letter-spacing: 1px;
   color: #fff;
   padding: 12px;
 }
@@ -48,6 +49,10 @@ button {
   background: #9c57f7;
   color: #000;
   transition: .2s ease;
+
+  &:hover {
+    box-shadow: 0 0 10px #9c57f7;
+  }
 }
 
 button:active {
@@ -57,15 +62,27 @@ button:active {
 label {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 12px;
   max-width: 100%;
   font-size: 18px;
   text-transform: uppercase;
 }
 
 h1 {
-  margin-bottom: 120px;
+  position: relative;
   text-align: center;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: #9c57f7;
+    border-radius: 2px;
+    z-index: -1;
+  }
 }
 
 #response {
@@ -78,4 +95,12 @@ h1 {
 
 #response:empty {
   display: none;
+}
+
+p {
+  width: 500px;
+  max-width: 100%;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
 }
